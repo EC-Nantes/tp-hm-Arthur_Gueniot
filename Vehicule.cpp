@@ -96,9 +96,9 @@ Vehicule::~Vehicule() { cout << "Destruction du Vehicule" << endl; }
 
 ostream &operator<<(ostream &s, Vehicule const &v) {
   s << "Vehicule :\n"
-    << "\tEtat : " << v.etat_ << "\tVitesse : " << v.vitesse_
-    << "\tVitesse Max : " << v.vitesseMax_
-    << "\tNombre de places : " << v.nbPlaces_
-    << "\tOccupants : " << v.occupants_;
+    << "\tEtat : " << v.getEtat() << "\tVitesse : " << v.vitesse_
+    << "\n\tVitesse Max : " << v.vitesseMax_
+    << "\n\tNombre de places : " << v.nbPlaces_
+    << "\n\tOccupants : " << v.occupants_;
   return s;
 }
