@@ -44,8 +44,8 @@ public:
     virtual string getEtat() const;
     
     virtual ~Vehicule();
-    friend ostream& operator<<(ostream& s,Vehicule const& v);
 
+    friend ostream& operator<<(ostream& s,Vehicule const& v);
 };
 
 // opérateur d'affichage
